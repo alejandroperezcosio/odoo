@@ -41,7 +41,7 @@ Plan contable boliviano e impuestos de acuerdo a disposiciones vigentes
 			],
     "demo_xml": [
 			],
-    "data": [
+    "update_xml": [
 			],
     "active": False,
     "installable": True,
