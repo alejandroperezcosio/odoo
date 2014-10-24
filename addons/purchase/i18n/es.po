@@ -104,7 +104,7 @@ msgstr ""
 "    <p>Hola ${object.partner_id.name},</p>\n"
 "    \n"
 "    <p>Ésta es una ${object.state in ('draft', 'sent') and 'solicitud de "
-"presupuesto' or 'confirmación de pedido de compra'} de "
+"cotización' or 'confirmación de pedido de compra'} de "
 "${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
@@ -259,7 +259,7 @@ msgstr ""
 "    <p>Hola ${object.partner_id.name},</p>\n"
 "    \n"
 "    <p>Ésta es una ${object.state in ('draft', 'sent') and 'solicitud de "
-"presupuesto' or 'confirmación de pedido de compra'} de "
+"cotización' or 'confirmación de pedido de compra'} de "
 "${object.company_id.name}: </p>\n"
 "    \n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
@@ -446,7 +446,7 @@ msgstr ""
 "Este proveedor no tiene ningún pedido de venta. Pulse para crear una nueva "
 "SdP.\n"
 "</p><p>\n"
-"La solicitud de presupuesto (SdP) es el primer paso del flujo de compras. "
+"La solicitud de cotización (SdC) es el primer paso del flujo de compras. "
 "Una vez\n"
 "convertido en un pedido de compra, será capaz de controlar la recepción de "
 "los\n"
@@ -519,7 +519,7 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear un presupuesto que será convertido en pedido de venta.\n"
+"Pulse para crear un cotización que será convertido en pedido de venta.\n"
 "</p><p>\n"
 "Use este menú para buscar sus pedidos de compra por referencias, proveedor, "
 "productos, etc. Para cada pedido de venta, puede controlar la discusión "
@@ -546,9 +546,9 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear una solicitud de presupuesto (SdP).\n"
+"Pulse para crear una solicitud de cotización (SdC).\n"
 "</p><p>\n"
-"El presupuesto contiene el historial de discusión/negociación que ha\n"
+"El cotización contiene el historial de discusión/negociación que ha\n"
 "tenido con su proveedor. Una vez confirmada, la solicitud se convierte\n"
 "en un pedido de compra.\n"
 "</p><p>\n"
@@ -839,7 +839,7 @@ msgid ""
 "            to one supplier or if you want a Call for Bids to compare offers "
 "from several suppliers."
 msgstr ""
-"Las licitaciones se usan cuando quiere generar solicitudes de presupuesto a "
+"Las licitaciones se usan cuando quiere generar solicitudes de cotizacion a "
 "varios proveedores para un conjunto de productos dado. Puede configurar por "
 "producto si hace una SdP directamente a un proveedor, o si quiere licitar "
 "para comparar ofertas de varios proveedores."
@@ -1070,7 +1070,7 @@ msgid ""
 "Depicts the date where the Quotation should be validated and converted into "
 "a Purchase Order, by default it's the creation date."
 msgstr ""
-"Indica la fecha en la que el presupuesto debería ser validado y convertido "
+"Indica la fecha en la que el cotización debería ser validado y convertido "
 "en un pedido de compra. Por defecto, es la fecha de creación."
 
 #. module: purchase
@@ -1959,12 +1959,12 @@ msgstr "Cantidad añadidad en la línea de pedido de compra existente"
 #: view:purchase.order:purchase.view_request_for_quotation_filter
 #: view:purchase.report:purchase.view_purchase_order_search
 msgid "Quotations"
-msgstr "Presupuestos"
+msgstr "Cotización"
 
 #. module: purchase
 #: selection:purchase.order,state:0
 msgid "RFQ"
-msgstr "Petición presupuesto"
+msgstr "Petición cotización"
 
 #. module: purchase
 #: view:purchase.order:purchase.purchase_order_form
@@ -2081,18 +2081,18 @@ msgstr "Ubicación relacionada"
 #: selection:purchase.report,state:0
 #: view:website:purchase.report_purchasequotation
 msgid "Request for Quotation"
-msgstr "Solicitud de presupuesto"
+msgstr "Solicitud de cotización"
 
 #. module: purchase
 #: view:website:purchase.report_purchaseorder
 msgid "Request for Quotation N°"
-msgstr "Solicitud de presupuesto Nº"
+msgstr "Solicitud de cotización Nº"
 
 #. module: purchase
 #: model:ir.actions.act_window,name:purchase.purchase_rfq
 #: model:ir.ui.menu,name:purchase.menu_purchase_rfq
 msgid "Requests for Quotation"
-msgstr "Solicitudes de presupuesto"
+msgstr "Solicitudes de cotización"
 
 #. module: purchase
 #: field:purchase.order.line,move_ids:0
@@ -2308,8 +2308,8 @@ msgid ""
 "occurs in the invoice or in the receipt of goods, the status becomes in "
 "exception."
 msgstr ""
-"El estado del pedido de compra o de la petición de presupuesto.\r\n"
-"Una petición de presupuesto es un pedido de compra en estado 'Borrador'.\r\n"
+"El estado del pedido de compra o de la petición de cotización.\r\n"
+"Una petición de cotización es un pedido de compra en estado 'Borrador'.\r\n"
 "Cuando la petición es confirmada por el usuario, su estado pasa a "
 "'Confirmado'.\r\n"
 "Hay que esperar entonces la confirmación del pedido por parte del proveedor, "

@@ -621,7 +621,7 @@ msgid ""
 "Adds a Claim link to the delivery order.\n"
 "-This installs the module claim_from_delivery."
 msgstr ""
-"Añade un enlace  a reclamaciones desde el albarán de envío.\n"
+"Añade un enlace  a reclamos desde el albarán de envío.\n"
 "- Esto instala el módulo claim_from_delivery."
 
 #. module: stock
@@ -663,7 +663,7 @@ msgstr ""
 #. module: stock
 #: field:stock.config.settings,module_claim_from_delivery:0
 msgid "Allow claim on deliveries"
-msgstr "Permite reclamaciones en las entregas"
+msgstr "Permite reclamos en las entregas"
 
 #. module: stock
 #: field:stock.config.settings,group_stock_packaging:0

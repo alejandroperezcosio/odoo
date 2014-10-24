@@ -121,7 +121,7 @@ msgstr ""
 "\n"
 "    <p>Hola ${object.partner_id.name},</p>\n"
 "    \n"
-"    <p>Aquí está su ${object.state in ('draft', 'sent') and 'presupuesto' or "
+"    <p>Aquí está su ${object.state in ('draft', 'sent') and 'cotización' or "
 "'confirmación de pedido'} de ${object.company_id.name}: </p>\n"
 "\n"
 "    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
@@ -237,7 +237,7 @@ msgid ""
 "'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
 msgstr ""
 "${object.company_id.name|safe} ${object.state in ('draft', 'sent') and "
-"'Presupuesto' or 'Pedido'} (Ref ${object.name or 'n/a' })"
+"'Cotización' or 'Pedido'} (Ref ${object.name or 'n/a' })"
 
 #. module: sale
 #: view:sale.order:sale.view_order_form
@@ -284,11 +284,11 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear un presupuesto que puede convertirse en un pedido\n"
+"Pulse para crear un cotización que puede convertirse en un pedido\n"
 "de venta.\n"
 "</p><p>\n"
 "Odoo le ayuda a gestionar eficientemente el flujo completo de ventas:\n"
-"presupuesto, pedido de venta, envío, facturación y pago.\n"
+"cotización, pedido de venta, envío, facturación y pago.\n"
 "</p>\n"
 "            "
 
@@ -313,11 +313,11 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear un presupuesto o un pedido de venta para este\n"
+"Pulse para crear un cotización o un pedido de venta para este\n"
 "cliente.\n"
 "</p><p>\n"
 "Odoo le ayuda a gestionar eficientemente el flujo completo de ventas:\n"
-"presupuesto, pedido de venta, envío, facturación y pago.\n"
+"cotización, pedido de venta, envío, facturación y pago.\n"
 "</p><p>\n"
 "Las características sociales le ayudan a organizar discusiones en cada\n"
 "pedido de venta, y permiten a su cliente seguir la evolución de los\n"
@@ -340,11 +340,11 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear un presupuesto que puede convertirse en un pedido\n"
+"Pulse para crear un cotización que puede convertirse en un pedido\n"
 "de venta.\n"
 "</p><p>\n"
 "Odoo le ayuda a gestionar eficientemente el flujo completo de ventas:\n"
-"presupuesto, pedido de venta, envío, facturación y pago.\n"
+"cotización, pedido de venta, envío, facturación y pago.\n"
 "</p>\n"
 "            "
 
@@ -369,10 +369,10 @@ msgid ""
 "            "
 msgstr ""
 "<p class=\"oe_view_nocontent_create\">\n"
-"Pulse para crear un presupuesto, el primer paso de una nueva venta.\n"
+"Pulse para crear un cotización, el primer paso de una nueva venta.\n"
 "</p><p>\n"
 "Odoo le ayuda a gestionar eficientemente el flujo completo de ventas:\n"
-"desde el presupuesto al pedido de venta, el envío, la facturación y el\n"
+"desde el cotización al pedido de venta, el envío, la facturación y el\n"
 "pago.\n"
 "</p><p>\n"
 "Las características sociales le ayudan a organizar discusiones en cada\n"
@@ -493,7 +493,7 @@ msgstr "Permitir configurar alertas por cliente o productos"
 #. module: sale
 #: field:sale.config.settings,module_website_quote:0
 msgid "Allow online quotations and templates"
-msgstr "Permitir presupuestos y plantillas en líneas"
+msgstr "Permitir cotizaciones y plantillas en líneas"
 
 #. module: sale
 #: field:sale.config.settings,group_discount_per_so_line:0
@@ -554,7 +554,7 @@ msgid ""
 "Manage Related Stock.\n"
 "-This installs the module sale_stock."
 msgstr ""
-"Permite realizar presupuestos y pedidos de ventas usando diversas políticas "
+"Permite realizar cotizaciones y pedidos de ventas usando diversas políticas "
 "de pedido y gestionar las existencias relacionadas.\n"
 "- Esto instala el módulo sale_stock."
 
@@ -678,7 +678,7 @@ msgstr "Cancelar pedido"
 #. module: sale
 #: view:sale.order:sale.view_order_form
 msgid "Cancel Quotation"
-msgstr "Cancelar presupuesto"
+msgstr "Cancelar cotización"
 
 #. module: sale
 #: selection:sale.order,state:0
@@ -726,7 +726,7 @@ msgstr "Marque esta opción para agrupar las facturas de los mismos clientes."
 #: help:crm.case.section,use_quotations:0
 msgid "Check this box to manage quotations in this sales team."
 msgstr ""
-"Marque esta casilla para gestionar presupuestos en este equipo de ventas."
+"Marque esta casilla para gestionar cotizaciones en este equipo de ventas."
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
@@ -929,7 +929,7 @@ msgstr "Plazo y condiciones por defecto..."
 #. module: sale
 #: help:res.company,sale_note:0
 msgid "Default terms and conditions for quotations."
-msgstr "Plazo y condiciones por defecto para los presupuestos."
+msgstr "Plazo y condiciones por defecto para las cotizacines."
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
@@ -1004,7 +1004,7 @@ msgstr "Borrador"
 #. module: sale
 #: selection:sale.order,state:0
 msgid "Draft Quotation"
-msgstr "Presupuesto borrador"
+msgstr "Cotización borrador"
 
 #. module: sale
 #: code:addons/sale/edi/sale_order.py:140
@@ -1141,7 +1141,7 @@ msgid ""
 "The 'Waiting Schedule' status is set when the invoice is confirmed           "
 "    but waiting for the scheduler to run on the order date."
 msgstr ""
-"Indica el estado del presupuesto o del pedido de venta.\n"
+"Indica el estado de la cotización o del pedido de venta.\n"
 "El estado de excepción se establece automáticamente cuando ocurre una "
 "operación de cancelación en la validación de la factura (excepción de "
 "factura) o en el proceso de albaranado (excepción de envío).\n"
@@ -1436,7 +1436,7 @@ msgstr "Mis lineas de pedidos de venta"
 #. module: sale
 #: view:sale.order:sale.view_order_form
 msgid "New Copy of Quotation"
-msgstr "Nueva copia de presupuesto"
+msgstr "Nueva copia de cotización"
 
 #. module: sale
 #: view:sale.order:sale.view_sales_order_filter
@@ -1473,7 +1473,7 @@ msgstr ""
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_order_tree
 msgid "Old Quotations"
-msgstr "Presupuestos antiguos"
+msgstr "Cotizacies antiguas"
 
 #. module: sale
 #: selection:sale.order,order_policy:0
@@ -1725,54 +1725,54 @@ msgstr "Cantidad (UdV)"
 #: view:sale.order:sale.view_quotation_tree
 #: selection:sale.report,state:0
 msgid "Quotation"
-msgstr "Presupuesto"
+msgstr "Cotización"
 
 #. module: sale
 #: model:ir.actions.report.xml,name:sale.report_sale_order
 msgid "Quotation / Order"
-msgstr "Presupuesto / Pedido"
+msgstr "Cotización / Pedido"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Quotation Date:"
-msgstr "Fecha de presupuesto:"
+msgstr "Fecha de Cotización:"
 
 #. module: sale
 #: view:sale.order:sale.view_quotation_tree
 msgid "Quotation Number"
-msgstr "Número de presupuesto"
+msgstr "Número de Cotización"
 
 #. module: sale
 #: view:website:sale.report_saleorder_document
 msgid "Quotation N°"
-msgstr "Presupuesto Nº"
+msgstr "Cotización Nº"
 
 #. module: sale
 #: model:mail.message.subtype,name:sale.mt_salesteam_order_sent
 msgid "Quotation Send"
-msgstr "Presupuesto enviado"
+msgstr "Cotización enviado"
 
 #. module: sale
 #: selection:sale.order,state:0
 msgid "Quotation Sent"
-msgstr "Presupuesto enviado"
+msgstr "Cotización enviado"
 
 #. module: sale
 #: model:mail.message.subtype,description:sale.mt_order_confirmed
 msgid "Quotation confirmed"
-msgstr "Presupuesto confirmado"
+msgstr "Cotización confirmado"
 
 #. module: sale
 #: code:addons/sale/sale.py:362
 #, python-format
 msgid "Quotation created"
-msgstr "Presupuesto creado"
+msgstr "Cotización creado"
 
 #. module: sale
 #: model:mail.message.subtype,description:sale.mt_order_sent
 #: model:mail.message.subtype,name:sale.mt_order_sent
 msgid "Quotation sent"
-msgstr "Presupuesto enviado"
+msgstr "Cotización enviado"
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
@@ -1782,22 +1782,22 @@ msgstr "Presupuesto enviado"
 #: model:ir.ui.menu,name:sale.menu_sale_quotations
 #: view:sale.order:sale.view_sales_order_filter
 msgid "Quotations"
-msgstr "Presupuestos"
+msgstr "Cotizaciones"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.action_order_report_quotation_salesteam
 msgid "Quotations Analysis"
-msgstr "Análisis de presupuestos"
+msgstr "Análisis de cotizaciones"
 
 #. module: sale
 #: model:ir.actions.act_window,name:sale.act_res_partner_2_sale_order
 msgid "Quotations and Sales"
-msgstr "Presupuestos y pedidos"
+msgstr "Cotizaciones y pedidos"
 
 #. module: sale
 #: field:crm.case.section,monthly_quoted:0
 msgid "Rate of created quotation per duration"
-msgstr "Proporción de presupuestos creados por duración"
+msgstr "Proporción de cotizaciones creados por duración"
 
 #. module: sale
 #: field:crm.case.section,monthly_invoiced:0
@@ -1833,7 +1833,7 @@ msgstr "Ingresos de pedidos de venta confirmados por mes."
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
 msgid "Revenue of created quotations per month."
-msgstr "Ingresos de presupuestos creados por mes."
+msgstr "Ingresos de cotizaciones creados por mes."
 
 #. module: sale
 #: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
@@ -2229,7 +2229,7 @@ msgstr ""
 #. module: sale
 #: help:sale.config.settings,module_website_quote:0
 msgid "This adds the online quotation"
-msgstr "Esto añade los presupuestos en línea"
+msgstr "Esto añade los cotizaciones en línea"
 
 #. module: sale
 #: help:account.config.settings,module_sale_analytic_plans:0
@@ -2256,7 +2256,7 @@ msgid ""
 "having invoiced yet. If you want to analyse your turnover, you should use "
 "the Invoice Analysis report in the Accounting application."
 msgstr ""
-"Este informe realiza un análisis de sus presupuestos y pedidos de venta. El "
+"Este informe realiza un análisis de sus cotizaciones y pedidos de venta. El "
 "análisis verifica los ingresos de sus ventas y las ordena por diferentes "
 "grupos de criterios (comercial, empresa, producto, etc.). Utilice este "
 "informe para realizar un análisis sobre sus ventas todavía no facturadas. Si "
@@ -2272,7 +2272,7 @@ msgid ""
 "invoiced yet. If you want to analyse your turnover, you should use the "
 "Invoice Analysis report in the Accounting application."
 msgstr ""
-"Este informe realiza un análisis sobre sus presupuestos. El análisis "
+"Este informe realiza un análisis sobre sus cotizaciones. El análisis "
 "comprueba sus ingresos por ventas y los ordena por diferentes criterios de "
 "agrupación (comercial, empresa, producto, etc). Use este informe para "
 "realizar un análisis de las ventas aún no facturadas. Si quiere analizar su "

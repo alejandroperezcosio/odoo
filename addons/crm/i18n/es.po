@@ -476,7 +476,7 @@ msgid ""
 "Allows you to track your customers/suppliers claims and grievances.\n"
 "-This installs the module crm_claim."
 msgstr ""
-"Permite realizar un seguimiento de las reclamaciones y quejas de sus "
+"Permite realizar un seguimiento de las reclamos y quejas de sus "
 "clientes/proveedores . \n"
 "- Instala el módulo crm_claim."
 
@@ -1058,12 +1058,12 @@ msgstr "Muerta"
 #: model:ir.actions.act_window,name:crm.base_partner_merge_automatic_act
 #: model:ir.ui.menu,name:crm.partner_merge_automatic_menu
 msgid "Deduplicate Contacts"
-msgstr "Deduplicar contactos"
+msgstr "Duplicar contactos"
 
 #. module: crm
 #: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
 msgid "Deduplicate the other Contacts"
-msgstr "Deduplicar los otros contactos"
+msgstr "Duplicar los otros contactos"
 
 #. module: crm
 #: field:sale.config.settings,alias_prefix:0
@@ -1807,7 +1807,7 @@ msgstr "Mailings"
 #. module: crm
 #: field:sale.config.settings,module_crm_claim:0
 msgid "Manage Customer Claims"
-msgstr "Gestionar reclamaciones de clientes"
+msgstr "Gestionar reclamos de clientes"
 
 #. module: crm
 #: model:res.groups,name:crm.group_fund_raising
