@@ -188,7 +188,7 @@ class stock_landed_cost(osv.osv):
         quant_obj = self.pool.get('stock.quant')
 
         for cost in self.browse(cr, uid, ids, context=context):
-            if not cost.valuation_adjustment_lines or not self._check_sum(cr, uid, cost, context=context):
+            if not cost.valuation_adjustment_lines: # or not self._check_sum(cr, uid, cost, context=context):
                 raise osv.except_osv(_('Error!'), _('You cannot validate a landed cost which has no valid valuation lines.'))
             move_id = self._create_account_move(cr, uid, cost, context=context)
             quant_dict = {}
