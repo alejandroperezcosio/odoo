@@ -287,7 +287,17 @@ openerp.ParentedMixin = {
         });
         this.setParent(undefined);
         this.__parentedDestroyed = true;
-    }
+    },
+    /**
+     * Find the closest ancestor matching predicate
+     */
+    findAncestor: function (predicate) {
+        var ancestor = this;
+        while (!(predicate(ancestor)) && ancestor && ancestor.getParent) {
+            ancestor = ancestor.getParent();
+        }
+        return ancestor;
+    },
 };
 
 /**
@@ -1516,6 +1526,13 @@ openerp.time_to_str = function(obj) {
     return lpad(obj.getHours(),2) + ":" + lpad(obj.getMinutes(),2) + ":"
          + lpad(obj.getSeconds(),2);
 };
+
+// jQuery custom plugins
+jQuery.expr[":"].Contains = jQuery.expr.createPseudo(function(arg) {
+    return function( elem ) {
+        return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+    };
+});
 
 openerp.declare = declare;
 

@@ -53,9 +53,9 @@ copyright = u'2014, OpenERP s.a.'
 # built documents.
 #
 # The short X.Y version.
-version = '8.0'
+version = 'master'
 # The full version, including alpha/beta/rc tags.
-release = '8.0b1'
+release = 'master'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
