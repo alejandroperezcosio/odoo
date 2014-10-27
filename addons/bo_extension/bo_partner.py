@@ -6,6 +6,6 @@ class bo_extension(osv.osv):
     _inherit = 'res.partner'
 
     _columns = { 
-        'nit' : fields.integer('NIT'),
-        'ci' : fields.integer('CI'),
+        'nit' : fields.char('NIT', required=False),
+        'ci' : fields.char('CI', required=False),
     }

@@ -5,9 +5,9 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
-                <field name="parent_id" position="after">
-                    <field name="ci"/>
-                    <field name="nit"/>
+                <field name="parent_id" position="before">
+                    <field name="ci" placeholder="CI"/>
+                    <field name="nit" placeholder="NIT"/>
                 </field>
             </field>
         </record>
